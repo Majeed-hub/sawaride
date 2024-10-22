@@ -6,7 +6,7 @@ import SawaLogo from "./assets/images/SawaLogo.png";
 function App() {
   return (
     <div className="App">
-      {/* Iframe background */}
+    
       <iframe
         src="https://my.spline.design/3dcitynavigationcopy-78a5326874435a5b665b6111aa66396e/"
         frameBorder="0"
@@ -14,7 +14,7 @@ function App() {
         title="3D City"
       ></iframe>
 
-      {/* Foreground content */}
+      
       <header className="App-header">
         <img src={SawaLogo} className="App-logo" alt="logo" />
       </header>
