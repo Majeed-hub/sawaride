@@ -118,7 +118,9 @@ const Team = () => {
       <div className="container unique-team-container">
         <div className="team__content unique-team-content">
           <h2>
-            <span className="highlight unique-highlight">Our Team</span>
+            <span className="highlight unique-highlight">
+              The Team Behind <span className="gradient">Sawa Ride</span>{" "}
+            </span>
           </h2>
         </div>
 
