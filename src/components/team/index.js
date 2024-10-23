@@ -69,27 +69,40 @@ import img1 from "../../assets/images/waleed-profile.png";
 import img2 from "../../assets/images/prathmesh-profile.png";
 import img3 from "../../assets/images/abdulrahman-profile.png";
 import img4 from "../../assets/images/majeed-profile.png";
+import img5 from "../../assets/images/narmin-profile.png";
+
 
 const teamMembers = [
   {
     imgUrl: img1,
     name: "Waleed Muniri",
     position: "Founder & CEO",
+    linkedin: "https://www.linkedin.com/in/waleedmuniri/",
   },
   {
     imgUrl: img2,
     name: "Prathmesh Gaikwad",
     position: "Co-Founder & CTO",
+    linkedin: " https://www.linkedin.com/in/prathmesh-gaikwad-1640b8251/",
   },
   {
     imgUrl: img3,
     name: "Abdulrahman M",
     position: "Co-Founder & COO",
+    linkedin:
+      "https://www.linkedin.com/in/abdulrahman-alanazi-pmp%C2%AE-cscp-cfm-605214123/",
   },
   {
     imgUrl: img4,
     name: "Abdul Majeed",
     position: "Tech Advisor",
+    linkedin: "https://www.linkedin.com/in/majeed-mohtesham",
+  },
+  {
+    imgUrl: img5,
+    name: "Narmin Mohtesham",
+    position: "Junior UI/UX Designer",
+    linkedin: "https://www.linkedin.com/in/narmin-m-652917231/",
   },
 ];
 
@@ -157,7 +170,9 @@ const TeamMemberCard = ({ member }) => {
       animate={control}
     >
       <div className="team__img unique-team-img">
-        <img src={member.imgUrl} alt={member.name} />
+        <a href={member.linkedin}>
+          <img src={member.imgUrl} alt={member.name} />
+        </a>
       </div>
       <div className="team__details unique-team-details">
         <h4>{member.name}</h4>

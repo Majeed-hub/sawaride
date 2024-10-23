@@ -36,7 +36,7 @@
 
 .footer__text {
     margin-bottom: 10px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .rights {
@@ -50,7 +50,7 @@
 
 .footer__social {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 15px;
 }
 
@@ -71,13 +71,28 @@ a {
 .footer__images {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-top: 20px;
 }
+.footer_img_text{
 
+    display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 20px;
+
+        font-weight: 500;
+}
+.text_1{
+    width: 100px;
+}
 .footer__image {
     width: 100px;
     height: auto;
+}
+.text{
+    text-align: left;
 }
 
 /* Responsive Styles */
@@ -88,7 +103,14 @@ a {
         align-items: center;
         text-align: center;
     }
-
+        .text_1 {
+            width: 80px;
+        }
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
     .footer__section {
         margin: 10px 0;
         text-align: center;

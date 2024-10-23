@@ -173,7 +173,7 @@
         /* Allow text to take space */
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 50px;
         /* Use px for gap */
         justify-content: center;
         text-align: left;
@@ -183,12 +183,12 @@
     .text-content h2 {
         margin: 0 0 20px;
         /* Consistent margins */
-        font-size: 3.0rem;
+        font-size: 3.5rem;
     }
 
     .text-content p {
         font-size: 1.5rem;
-        line-height: 1.2;
+        line-height: 1.5;
     }
 
     .image-content {
@@ -233,7 +233,7 @@
         justify-content: center;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 50px;
         align-items: center;
         /* Center text content */
         margin-top: 0;
@@ -259,7 +259,7 @@
         display: flex;
         justify-content: center;
         /* Center image */
-        margin-top: 20px;
+        /* margin-top: 20px; */
         /* Space between text and image */
     }
 
@@ -281,7 +281,7 @@
     }
 
     .text-content h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .text-content p {
