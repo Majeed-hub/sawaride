@@ -4,7 +4,7 @@ import Section from "../../components/section/index";
 import TeamSection from "../../components/teamSection/index";
 import Footer from "../../components/footer/index";
 // import img1 from "../../assets/images/undraw_map_dark_re_36sy.svg";
-import img2 from "../../assets/images/undraw_personal_info_re_ur1n.svg";
+// import img2 from "../../assets/images/undraw_personal_info_re_ur1n.svg";
 import img3 from "../../assets/images/vector-1.png";
 import img4 from "../../assets/images/vector-2.png";
 import img5 from "../../assets/images/vector-3.png";
