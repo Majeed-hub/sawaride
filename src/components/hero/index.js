@@ -1,6 +1,7 @@
 import React from 'react';
 import SawaLogo from "../../assets/images/SawaLogo.png";
 import "./index.css";
+import Button from "../../components/button/index";
 function Hero() {
     return (
       <>
@@ -14,6 +15,7 @@ function Hero() {
 
           <header className="App-header">
             <img src={SawaLogo} className="App-logo" alt="logo" />
+            <Button />
           </header>
           <header className="App-body">
             {/* <h1>Welcome to open mobility</h1> */}

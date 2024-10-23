@@ -27,7 +27,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // import Rellax from "rellax";
 import "./index.css";
-import Button from "../../components/button/index";
+
 
 function Section({ title, content, imageUrl, dark }) {
   useEffect(() => {
@@ -47,7 +47,7 @@ function Section({ title, content, imageUrl, dark }) {
         >
           <h2>{title}</h2>
           <p>{content}</p>
-          <Button />
+         
         </div>
         <div className="image-content" data-aos="zoom-in"> {/* Apply zoom effect */}
           <img src={imageUrl} alt={title} />

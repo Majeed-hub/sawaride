@@ -3,6 +3,9 @@ import "./index.css"; // Ensure this file includes the necessary CSS for styling
 import img1 from "../../assets/images/SONFM.png";
 // import img2 from "../../assets/images/saudimade_logo.png";
 import img3 from "../../assets/images/saudimade.svg";
+import img4 from "../../assets/images/App_Store.png";
+import img5 from "../../assets/images/Google-Play.png";
+
 
 
 const Footer = () => {
@@ -11,7 +14,24 @@ const Footer = () => {
       <div className="wrapper">
         <div className="footer__container">
           <div className="footer__section">
-            <b>Social Links:</b> <br />
+            <b>Download The App</b> <br />
+            <br />
+            <div className="footer__images">
+              {" "}
+              {/* <a href="https://saudiopennetwork.com"> */}
+              <img
+                src={img4}
+                alt="saudi open network"
+                className="footer__image"
+              />
+              {/* </a> */}
+              {/* <a href="https://saudimade.sa/en"> */}
+              <img src={img5} alt="saudi made" className="footer__image" />
+              {/* </a> */}
+            </div>
+          </div>
+          <div className="footer__section">
+            <b>Social Links</b> <br />
             <br />
             <p className="footer__text">Follow us on social media:</p>
             <div className="footer__social">
@@ -51,7 +71,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__section">
-            <b>Support Mail:</b> <br />
+            <b>Support Mail</b> <br />
             <br />
             <p>
               For any complaints or concerns, please reach out to:
@@ -62,7 +82,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__section">
-            <b>Registered Address:</b> <br />
+            <b>Registered Address</b> <br />
             <br />
             <p>
               Street #61, Al Nadwah Dist, Riyadh, Kingdom of Saudi Arabia, 14813
@@ -70,7 +90,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <div className="footer_img_text">
+            <div className="footer_img_text footer__section">
               <p className="text_1">Part Of</p>
               <p>Proudly</p>
             </div>
