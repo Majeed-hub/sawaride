@@ -22,21 +22,21 @@
 // }
 
 // Section.js
-import React from "react";
-// import AOS from "aos";
+import React, {useEffect} from "react";
+import AOS from "aos";
 import "aos/dist/aos.css";
 // import Rellax from "rellax";
 import "./index.css";
 import Button from "../../components/button/index";
 
 function Section({ title, content, imageUrl, dark }) {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1000 });
-  //   new Rellax(".image-content img", {
-  //     speed: -3,
-  //     center: true,
-  //   });
-  // }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+    // new Rellax(".image-content img", {
+    //   speed: -3,
+    //   center: true,
+    // });
+  }, []);
 
   return (
     <section className={`section ${dark ? "section-dark" : ""}`} data-aos="flip-up">
