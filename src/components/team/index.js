@@ -1,24 +1,29 @@
 import React from "react";
 import "./index.css";
+import img1 from "../../assets/images/waleed-profile.png"
+import img2 from "../../assets/images/prathmesh-profile.png";
+import img3 from "../../assets/images/abdulrahman-profile.png";
+import img4 from "../../assets/images/majeed-profile.png";
+
 
 const teamMembers = [
   {
-    imgUrl: "https://via.placeholder.com/600x400",
+    imgUrl: img1,
     name: "Waleed Muniri",
     position: "Founder & CEO",
   },
   {
-    imgUrl: "https://via.placeholder.com/600x400",
+    imgUrl: img2,
     name: "Prathmesh Gaikwad",
     position: "Co-Founder & CTO",
   },
   {
-    imgUrl: "https://via.placeholder.com/600x400",
+    imgUrl: img3,
     name: "Abdulrahman M ",
     position: "Co-Founder & COO",
   },
   {
-    imgUrl: "https://via.placeholder.com/600x400",
+    imgUrl: img4,
     name: "Abdul Majeed",
     position: "Tech Advisor",
   },
