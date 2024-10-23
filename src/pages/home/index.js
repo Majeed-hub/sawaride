@@ -5,27 +5,23 @@ import TeamSection from "../../components/teamSection/index";
 import Footer from "../../components/footer/index";
 
 function Home() {
-  // Create an array of refs for the sections, including the hero section
   const sectionRefs = useRef([]);
-
-  let isScrolling = false; // Flag to prevent multiple scroll events firing
+  const isScrolling = useRef(false); // Use useRef to keep the value across renders
 
   const handleScroll = useCallback(
     (event) => {
       event.preventDefault();
 
-      if (isScrolling) return;
+      if (isScrolling.current) return;
 
-      isScrolling = true;
+      isScrolling.current = true;
       const direction = event.deltaY > 0 ? 1 : -1; // 1 for down, -1 for up
       const currentSectionIndex = sectionRefs.current.findIndex(
         (ref) => ref && ref.getBoundingClientRect().top >= 0
       );
 
-      // Calculate the next section index
       const nextSectionIndex = currentSectionIndex + direction;
 
-      // Ensure the index is within the bounds of sectionRefs
       if (
         nextSectionIndex >= 0 &&
         nextSectionIndex < sectionRefs.current.length
@@ -36,34 +32,33 @@ function Home() {
           const start = window.scrollY;
           const end = target.getBoundingClientRect().top + window.scrollY;
           const distance = end - start;
-          const duration = 800; // Duration of the scroll animation
+          const duration = 800;
           let startTime = null;
 
           const animation = (currentTime) => {
             if (!startTime) startTime = currentTime;
             const timeElapsed = currentTime - startTime;
             const progress = Math.min(timeElapsed / duration, 1);
-            const easing = easeInOutQuad(progress); // Easing function for smoother animation
+            const easing = easeInOutQuad(progress);
 
             window.scrollTo(0, start + distance * easing);
 
             if (timeElapsed < duration) {
               requestAnimationFrame(animation);
             } else {
-              isScrolling = false;
+              isScrolling.current = false; // Reset scrolling flag after animation ends
             }
           };
 
           requestAnimationFrame(animation);
         }
       } else {
-        isScrolling = false; // Reset the scrolling flag if out of bounds
+        isScrolling.current = false;
       }
     },
     [sectionRefs]
   );
 
-  // Easing function for smooth scrolling
   const easeInOutQuad = (t) => {
     return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
   };
