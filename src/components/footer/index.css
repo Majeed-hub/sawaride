@@ -1,0 +1,86 @@
+.unique-footer {
+    background-color: #333;
+    /* Dark background for footer */
+    color: white;
+    /* White text color */
+    padding: 20px 0;
+    /* Padding for top and bottom */
+    text-align: center;
+    /* Center align text */
+}
+
+.footer__container {
+    max-width: 1200px;
+    /* Max width for footer content */
+    margin: 0 auto;
+    /* Center the footer */
+    padding: 0 20px;
+    /* Padding for left and right */
+}
+
+.footer__text {
+    margin-bottom: 10px;
+    /* Margin below the text */
+}
+
+.footer__social {
+    display: flex;
+    /* Use flexbox for social links */
+    justify-content: center;
+    /* Center the links */
+    gap: 15px;
+    /* Space between the links */
+}
+a{
+    text-decoration: none;
+}
+
+.footer__link {
+    color: white;
+    /* White color for links */
+    font-size: 1.5rem;
+    /* Font size for icons */
+    transition: color 0.3s ease;
+    /* Transition for hover effect */
+}
+
+.footer__link:hover {
+    color: #61dafb;
+    /* Change color on hover */
+}
+
+.footer__images {
+    display: flex;
+    /* Use flexbox for images */
+    justify-content: center;
+    /* Center the images */
+    gap: 20px;
+    /* Space between images */
+    margin-top: 20px;
+    /* Margin above images */
+}
+
+.footer__image {
+    width: 100px;
+    /* Set a fixed width for images */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .footer__text {
+        font-size: 1.2rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .footer__link {
+        font-size: 1.2rem;
+        /* Adjust icon size for smaller screens */
+    }
+
+    .footer__image {
+        width: 80px;
+        /* Smaller images for mobile */
+    }
+}

@@ -1,0 +1,107 @@
+/* Section.css */
+.section {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.section-dark {
+    background-color: #333;
+    color: white;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.text-content h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+}
+
+.text-content p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.image-content {
+    flex: 1;
+    text-align: right;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Mobile optimization */
+@media only screen and (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        /* Center content vertically */
+        text-align: center;
+        gap: 15px;
+    }
+
+    .text-content {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+        padding: 0 10px;
+        text-align: center;
+       
+    }
+
+    .image-content img {
+        width: 100%;
+    }
+}
+
+/* For very small devices like phones in portrait mode (max width 480px) */
+@media only screen and (max-width: 480px) {
+    .section-content {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .text-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+}

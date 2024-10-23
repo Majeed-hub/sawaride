@@ -1,0 +1,18 @@
+.gradient-button {
+    background: linear-gradient(90deg, #00A8C6, #A5FF7E);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    /* Slightly enlarges the button on hover */
+}
