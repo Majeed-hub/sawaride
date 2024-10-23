@@ -28,18 +28,22 @@
 
 .text-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+    justify-content: center;
     text-align: left;
 }
 
 .text-content h2 {
     margin-top: 0px;
     margin-bottom: 20px;
-    font-size: 3.5rem;
+    font-size: 3.0rem;
 }
 
 .text-content p {
-    font-size: 1.8rem;
-    line-height: 1.6;
+    font-size: 1.5rem;
+    line-height: 1.2;
 }
 
 .image-content {
@@ -72,8 +76,9 @@
         justify-content: center;
         display: flex;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
-        margin: 50px auto;
+        margin-top: 60px;
     }
 
     .text-content h2 {

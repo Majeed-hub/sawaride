@@ -5,6 +5,10 @@ import TeamSection from "../../components/teamSection/index";
 import Footer from "../../components/footer/index";
 // import img1 from "../../assets/images/undraw_map_dark_re_36sy.svg";
 import img2 from "../../assets/images/undraw_personal_info_re_ur1n.svg";
+import img3 from "../../assets/images/vector-1.png";
+import img4 from "../../assets/images/vector-2.png";
+import img5 from "../../assets/images/vector-3.png";
+
 
 
 function Home() {
@@ -82,25 +86,25 @@ function Home() {
       </div>
       <div ref={(el) => (sectionRefs.current[1] = el)}>
         <Section
-          title="About Us"
-          content="We are a company focused on delivering the best products and services to our customers."
-          imageUrl={img2}
+          title="You Pay Less. Driver Earns More"
+          content="Sawa Ride is a Direct-to-Driver platform with no commissions or intermediaries. 100% of your payment goes directly to the driver and supports their family."
+          imageUrl={img3}
           dark
         />
       </div>
       <div ref={(el) => (sectionRefs.current[2] = el)}>
         <Section
-          title="Our Services"
-          content="Our range of services is tailored to meet the specific needs of our clients."
-          imageUrl={img2}
+          title="Driven By Drivers Made For People"
+          content="A customer-friendly app built with driver insights and tech collaboration, aimed at solving current challenges and fostering community."
+          imageUrl={img5}
         />
       </div>
       <div ref={(el) => (sectionRefs.current[3] = el)}>
         <Section
-          title="Contact Us"
-          content="Feel free to reach out to us for any inquiries or support."
-          imageUrl={img2}
-          dark={1}
+          title="Fast, Safe, and Easy Rides."
+          content="Experience lightning-fast and user-friendly ride bookings through our app. Enjoy doorstep pickups by trusted drivers for a safe and convenient journey."
+          imageUrl={img4}
+          dark
         />
       </div>
       <div ref={(el) => (sectionRefs.current[4] = el)}>
