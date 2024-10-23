@@ -15,7 +15,9 @@ function Hero() {
 
           <header className="App-header">
             <img src={SawaLogo} className="App-logo" alt="logo" />
-            <Button />
+            <div className="d-button">
+              <Button />
+            </div>
           </header>
           <header className="App-body">
             {/* <h1>Welcome to open mobility</h1> */}
@@ -27,9 +29,14 @@ function Hero() {
 
             <p></p>
             <p className="sub-heading">
-              An app by drivers, <span className="gradient">SAWA RIDE</span> , <br />
-              for the people.<br/> 100% direct payment to drivers.
+              An app by drivers, <span className="gradient">SAWA RIDE</span> ,{" "}
+              <br />
+              for the people.
+              <br /> 100% direct payment to drivers.
             </p>
+            <div className="mobile-button">
+              <Button />
+            </div>
           </header>
         </div>
       </>

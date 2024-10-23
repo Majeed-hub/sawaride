@@ -69,6 +69,8 @@
 
 .App-link {
     color: #61dafb;
+}.mobile-button {
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -78,9 +80,17 @@
         flex-direction: column;
         /* Stack elements vertically on mobile */
         margin: 20px 0 0 20px;
+        gap: 30px;
         /* Reduce margin for mobile */
         align-items: center;
         
+    }
+    .mobile-button{
+        display: block;
+        margin-top:30px ;
+    }
+    .d-button{
+        display: none;
     }
 
     /* Adjusting App-body for mobile */
