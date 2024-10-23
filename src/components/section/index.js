@@ -22,10 +22,10 @@
 // }
 
 // Section.js
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
+// import AOS from "aos";
 import "aos/dist/aos.css";
-import Rellax from "rellax";
+// import Rellax from "rellax";
 import "./index.css";
 import Button from "../../components/button/index";
 

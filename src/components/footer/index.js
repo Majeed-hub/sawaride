@@ -56,19 +56,23 @@ const Footer = () => {
           </div>
 
           <div className="footer__section">
-            <p >Registered Address:</p>
+            <p>Registered Address:</p>
             <p>
               Street #61, Al Nadwah Dist, Riyadh, Kingdom of Saudi Arabia, 14813
             </p>
           </div>
 
           <div className="footer__images">
-            <img
-              src={img1}
-              alt="saudi open network"
-              className="footer__image"
-            />
-            <img src={img2} alt="saudi made" className="footer__image" />
+            <a href="https://saudiopennetwork.com">
+              <img
+                src={img1}
+                alt="saudi open network"
+                className="footer__image"
+              />
+            </a>
+            <a href="https://saudimade.sa/en">
+              <img src={img2} alt="saudi made" className="footer__image" />
+            </a>
           </div>
         </div>
       </div>
