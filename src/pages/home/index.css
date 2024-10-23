@@ -2,3 +2,7 @@ html {
     scroll-behavior: smooth;
     /* Enables smooth scrolling for anchor links */
 }
+.spline-watermark {
+    display: none !important;
+    z-index: -100;
+}
