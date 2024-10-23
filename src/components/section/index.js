@@ -3,6 +3,7 @@ import React from "react";
 import "./index.css"; // Optional: add styles for the section
 import Button from "../../components/button/index";
 
+
 function Section({ title, content, imageUrl, dark }) {
   return (
     <section className={`section ${dark ? "section-dark" : ""}`}>

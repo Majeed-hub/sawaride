@@ -3,6 +3,9 @@ import Hero from "../../components/hero/index";
 import Section from "../../components/section/index";
 import TeamSection from "../../components/teamSection/index";
 import Footer from "../../components/footer/index";
+// import img1 from "../../assets/images/undraw_map_dark_re_36sy.svg";
+import img2 from "../../assets/images/undraw_personal_info_re_ur1n.svg";
+
 
 function Home() {
   const sectionRefs = useRef([]);
@@ -81,21 +84,22 @@ function Home() {
         <Section
           title="About Us"
           content="We are a company focused on delivering the best products and services to our customers."
-          imageUrl="https://via.placeholder.com/600x400"
+          imageUrl={img2}
+          dark
         />
       </div>
       <div ref={(el) => (sectionRefs.current[2] = el)}>
         <Section
           title="Our Services"
           content="Our range of services is tailored to meet the specific needs of our clients."
-          imageUrl="https://via.placeholder.com/600x400"
+          imageUrl={img2}
         />
       </div>
       <div ref={(el) => (sectionRefs.current[3] = el)}>
         <Section
           title="Contact Us"
           content="Feel free to reach out to us for any inquiries or support."
-          imageUrl="https://via.placeholder.com/600x400"
+          imageUrl={img2}
           dark={1}
         />
       </div>

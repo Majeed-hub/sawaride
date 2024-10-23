@@ -1,4 +1,5 @@
 /* Section.css */
+@media only screen and (min-width: 768px) {
 .section {
     width: 100vw;
     min-height: 100vh;
@@ -51,11 +52,12 @@
     height: auto;
     border-radius: 8px;
 }
-
+}
 /* Mobile optimization */
 @media only screen and (max-width: 768px) {
     .section {
         padding: 20px;
+        min-height: 70vh;
     }
 
     .section-content {

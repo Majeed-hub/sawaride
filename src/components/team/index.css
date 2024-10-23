@@ -64,6 +64,10 @@
         width: 30%;
         margin-bottom: 30px;
     }
+        .unique-team-img {
+            width:60%;
+            margin: auto;
+        }
 
     .unique-team-wrapper {
         flex-wrap: wrap;

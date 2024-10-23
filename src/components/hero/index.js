@@ -18,15 +18,15 @@ function Hero() {
           <header className="App-body">
             {/* <h1>Welcome to open mobility</h1> */}
 
-            <p className='heading'>
+            <p className="heading">
               Book a ride with <br />
-              <span className='gradient'>Zero commission</span>
+              <span className="gradient">Zero commission</span>
             </p>
 
             <p></p>
-            <p className='sub-heading'>
-              An app by drivers for the people. <br /> 100% of your fare goes
-              straight to them. <br /> No middlemen, just good vibes!
+            <p className="sub-heading">
+              An app by drivers, <span className="gradient">SAWA RIDE</span> , <br />
+              for the people.<br/> 100% direct payment to drivers.
             </p>
           </header>
         </div>

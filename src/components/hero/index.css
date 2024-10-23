@@ -80,7 +80,11 @@
     /* Adjusting App-body for mobile */
     .App-body {
         margin: 50px 0 0 20px;
+        height: 60vh;
+        display: flex;
         /* Reduce margins for mobile */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         justify-content: center;
         /* Center-align text/content for better readability */
@@ -99,8 +103,13 @@
     }
 
     .heading {
-        font-size: 30px;
+        font-size: 45px;
         font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .sub-heading{
+        font-size: 20px;
+
     }
 
     /* Reduce iframe size for mobile if needed */

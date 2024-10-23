@@ -5,10 +5,10 @@ import Team from "../team";
 
 function TeamSection({ title, content, imageUrl, dark }) {
   return (
-    <section className={`section ${dark ? "section-dark" : ""}`}>
+    <section className={`team-section ${dark ? "section-dark" : ""}`}>
       <div className="section-content">
         <div className="text-content">
-         <Team />
+          <Team />
         </div>
       </div>
     </section>
