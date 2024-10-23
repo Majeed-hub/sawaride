@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__section">
-            <b>Social Links</b> <br />
+            <b>Social Handles</b> <br />
             <br />
             <p className="footer__text">Follow us on social media:</p>
             <div className="footer__social">
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__section">
-            <b>Support Mail</b> <br />
+            <b>Contact Us</b> <br />
             <br />
             <p>
               For any complaints or concerns, please reach out to:

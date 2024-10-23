@@ -120,6 +120,7 @@
 .unique-team-wrapper {
     display: flex;
     align-items: center;
+    
     column-gap: 2rem;
     /* Space between items */
     overflow: hidden;
@@ -128,8 +129,8 @@
 
 /* Individual team member item */
 .unique-team-item {
-    width: 25%;
-    /* Adjust as necessary */
+    width: 100%;
+    /* Adjust as necessary */   
     background: var(--team-card-bg);
     border-radius: 5px;
     transition: transform 0.3s ease;
