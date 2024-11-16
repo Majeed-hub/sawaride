@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import SawaLogo from "../../assets/images/SawaLogo.png";
 import "./index.css";
 import Button from "../../components/button/index";
