@@ -18,6 +18,8 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    /* padding: 0 20px; */
+    /* Ensure some padding on both sides */
 }
 
 /* Heading styles */
@@ -25,11 +27,13 @@ body {
     font-size: 3.5rem;
     font-weight: 500;
     margin-bottom: 20px;
+    /* Default for desktop */
 }
 
 .sub-heading {
     font-size: 1.5rem;
     color: #818181;
+    /* Default for desktop */
 }
 
 .gradient {
@@ -83,10 +87,10 @@ body {
     position: absolute;
     z-index: 2;
     top: 50%;
-    left: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
 /* Optional: styling for the logo or other foreground elements */
@@ -98,18 +102,15 @@ body {
 /* Responsive styles for smaller screens */
 @media only screen and (max-width: 768px) {
 
-    /* Header adjustment */
+    /* Header adjustment for mobile */
     .App-header {
         flex-direction: column;
         gap: 20px;
-        /* left:0; */
-        /* margin: 20px; */
         text-align: center;
         font-size: 1rem;
-        /* Adjust font size for mobile */
     }
 
-    /* Adjust the app body */
+    /* Adjust the app body for mobile */
     .App-body {
         top: 30%;
         left: 50%;
@@ -139,21 +140,16 @@ body {
         font-size: 14px;
     }
 
-    /* Heading adjustments */
+    /* Heading adjustments for mobile */
     .heading {
         font-size: 2rem;
         /* Smaller font size on mobile */
         margin-bottom: 20px;
     }
 
-    /* Sub-heading adjustments */
+    /* Sub-heading adjustments for mobile */
     .sub-heading {
-        font-size: 0.9rem;
-    }
-
-    /* Optional: Adjust margins and padding */
-    .App {
-        padding: 0 15px;
-        /* Add padding for small devices */
+        font-size: 1rem;
+        /* Adjusted for mobile */
     }
 }
