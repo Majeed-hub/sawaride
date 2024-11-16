@@ -24,7 +24,7 @@ function CarShow() {
           position={[-5, 5, -5]}
           castShadow
         />
-        <ambientLight intensity={0.4} />
+        <ambientLight intensity={1} />
 
         <Ground />
 
