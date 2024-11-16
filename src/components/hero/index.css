@@ -1,11 +1,18 @@
-/* .App {
-  text-align: center;
-} */
- *{
+/* General reset for margin, padding, and box-sizing */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container holding everything */
 .App {
     position: relative;
     width: 100vw;
@@ -13,125 +20,140 @@
     overflow: hidden;
 }
 
+/* Heading styles */
 .heading {
-    font-size: 60px;
+    font-size: 3.5rem;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .sub-heading {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: #818181;
 }
 
 .gradient {
     background: linear-gradient(90deg, #00A8C6, #A5FF7E);
     -webkit-background-clip: text;
-    /* For Safari and Chrome */
     background-clip: text;
     color: transparent;
 }
 
+/* Canvas to hold the 3D background */
 .App-iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    z-index: 1;
-    /* Keep iframe in the background */
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background-color: #0b0c10;
 }
 
+/* Header and text content */
 .App-header {
-    position: relative;
-
+    position: absolute;
     z-index: 2;
+    width: 95%;
+    top: 20px;
+    left: 20px;
     display: flex;
-    margin: 50px 50px 0 50px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     color: white;
+    font-size: 1.2rem;
 }
 
+/* If using links or buttons in the foreground */
+.App-link {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Mobile button styles */
+.mobile-button {
+    display: none;
+}
+
+/* App-body content */
 .App-body {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    margin: 100px 0 0 67px;
-    align-items: center;
-    
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
     color: white;
+    text-align: left;
 }
 
+/* Optional: styling for the logo or other foreground elements */
 .App-logo {
     height: 12vmin;
     pointer-events: none;
 }
 
-.App-link {
-    color: #61dafb;
-}.mobile-button {
-    display: none;
-}
-
+/* Responsive styles for smaller screens */
 @media only screen and (max-width: 768px) {
 
-    /* Adjusting the App-header for mobile */
+    /* Header adjustment */
     .App-header {
         flex-direction: column;
-        /* Stack elements vertically on mobile */
-        margin: 20px 0 0 20px;
-        gap: 30px;
-        /* Reduce margin for mobile */
-        align-items: center;
-        
-    }
-    .mobile-button{
-        display: block;
-        margin-top:30px ;
-    }
-    .d-button{
-        display: none;
-    }
-
-    /* Adjusting App-body for mobile */
-    .App-body {
-        margin: 50px 0 0 20px;
-        height: 60vh;
-        display: flex;
-        /* Reduce margins for mobile */
-        flex-direction: column;
-        align-items: center;
+        gap: 20px;
+        /* left:0; */
+        /* margin: 20px; */
         text-align: center;
-        justify-content: center;
-        /* Center-align text/content for better readability */
+        font-size: 1rem;
+        /* Adjust font size for mobile */
     }
 
-    /* Resize logo for smaller screens */
+    /* Adjust the app body */
+    .App-body {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Logo size for mobile */
     .App-logo {
-        height: 20vmin;
-        /* Increase the size for better visibility on mobile */
+        height: 15vmin;
+    }
+
+    /* Mobile button appears */
+    .mobile-button {
+        display: block;
+        margin-top: 30px;
+    }
+
+    /* Hide desktop button on mobile */
+    .d-button {
+        display: none;
     }
 
     /* Adjust link appearance */
     .App-link {
         font-size: 14px;
-        /* Reduce link font size for mobile */
     }
 
+    /* Heading adjustments */
     .heading {
-        font-size: 45px;
-        font-weight: 500;
+        font-size: 2rem;
+        /* Smaller font size on mobile */
         margin-bottom: 20px;
     }
-    .sub-heading{
-        font-size: 20px;
 
+    /* Sub-heading adjustments */
+    .sub-heading {
+        font-size: 0.9rem;
     }
 
-    /* Reduce iframe size for mobile if needed */
-    /* .App-iframe {
-        height: auto;
-        width: 100vw;
-        Ensure iframe takes full width
-    } */
+    /* Optional: Adjust margins and padding */
+    .App {
+        padding: 0 15px;
+        /* Add padding for small devices */
+    }
 }

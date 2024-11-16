@@ -1,17 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import SawaLogo from "../../assets/images/SawaLogo.png";
 import "./index.css";
 import Button from "../../components/button/index";
+import CarShow from '../backgroundGraphics';
 function Hero() {
+
     return (
       <>
         <div className="App">
-          <iframe
-            src="https://my.spline.design/3dcitynavigationcopy-78a5326874435a5b665b6111aa66396e/"
-            frameBorder="0"
-            className="App-iframe"
-            title="3D City"
-          ></iframe>
+          <CarShow
+            className="App-iframe" 
+          />
 
           <header className="App-header">
             <img src={SawaLogo} className="App-logo" alt="logo" />
@@ -22,10 +21,10 @@ function Hero() {
           <header className="App-body">
             {/* <h1>Welcome to open mobility</h1> */}
 
-            <p className="heading">
+            <h2 className="heading">
               Book a ride with <br />
               <span className="gradient">Zero commission</span>
-            </p>
+            </h2>
 
             <p></p>
             <p className="sub-heading">
@@ -34,9 +33,7 @@ function Hero() {
               for the people.
               <br /> 100% direct payment to drivers.
             </p>
-            <div className="mobile-button">
-              <Button />
-            </div>
+           
           </header>
         </div>
       </>

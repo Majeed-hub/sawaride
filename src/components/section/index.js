@@ -29,6 +29,7 @@ import "aos/dist/aos.css";
 import "./index.css";
 
 
+
 function Section({ title, content, imageUrl, dark }) {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -39,11 +40,11 @@ function Section({ title, content, imageUrl, dark }) {
   }, []);
 
   return (
-    <section className={`section ${dark ? "section-dark" : ""}`} data-aos="flip-up">
+    <section className={`section ${dark ? "section-dark" : ""}`} >
       <div className="section-content">
         <div
           className="text-content"
-          data-aos="slide-right" // Apply slide in effect
+          data-aos="slide-up" // Apply slide in effect
         >
           <h2>{title}</h2>
           <p>{content}</p>
